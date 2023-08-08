@@ -1,0 +1,95 @@
+.box {
+    border: 10px solid black; /* Agrega un borde de 1 píxel sólido de color negro */
+    margin: 20px; /* Agrega un margen exterior de 20 píxeles */
+    padding: 10px; /* Agrega un padding interno de 10 píxeles */
+    width: 200px; /* Ajusta el ancho del div a 200 píxeles */
+    height: 100px; /* Ajusta la altura del div a 100 píxeles */
+
+}
+/*.caja {
+    width: 200px;
+    height: 150px;
+    border: 2px solid red;
+    margin: 10px 20px;
+    padding: 10px;
+}
+.caja 1,
+.caja 2,
+.caja 3 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  margin-right: 10px;
+}
+.contenedor {
+    display: flex; para poder usar esto debo tener un contenedor creado
+}
+.caja {
+    width: 100px;
+    height: 100px;
+    border: 5px solid blue;
+    margin-right: 10px;
+} 
+.caja1 {
+    display: block;
+}
+.caja2{
+    diplay: inline;
+}
+.caja3{
+    diplay: inline;
+    background-color: yellow;
+}*/
+.contenedor{
+    position: relative;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    margin-right: 10px;
+}
+.caja1{
+    position: static;
+}
+.caja2{
+    position: relative;
+    right: 10px;
+}
+.caja3{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+}
+.lista-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+} 
+.lista-flexbox li {
+    margin: 0 10px; /* Ajusta el margen según tus preferencias */
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-grid img {
+    flex: 1 0 calc(33.33% - 10px); /* 33.33% para 3 imágenes por fila, -10px para el margen entre las imágenes */
+    margin: 5px; /* Ajusta el margen entre las imágenes según tus preferencias */
+    object-fit: cover; /* Ajusta el ajuste de la imagen según tus preferencias */
+    max-height: 100%; /* Ajusta la altura máxima de las imágenes según tus preferencias */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.box {
+    flex: 1 0 calc(33.33% - 20px); /* 33.33% para 3 cajas por fila, -20px para el margen entre las cajas */
+    margin: 10px; /* Ajusta el margen entre las cajas según tus preferencias */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    padding: 20px; /* Espacio interno opcional */
+}
